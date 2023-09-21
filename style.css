@@ -3,12 +3,6 @@
   --bg-darkblue: #1b2f45;
 }
 
-
-.darkblue {
-  background-color: var(--bg-darkblue);
-  color: white;
-}
-
 footer {
   background-color: var(--bg-grey);
 }
@@ -17,7 +11,10 @@ li {
   list-style-type: "-";
 }
 
-
+nav a {
+  color: white;
+  text-decoration: none;
+}
 
 .copyright {
   background-color: white;
@@ -68,4 +65,31 @@ li {
   background-color: rgba(0, 0, 0, 0.384);
   color: white;
   min-height: 100dvh;
+}
+
+.darkblueBG {
+  background-color: var(--bg-darkblue);
+  color: white;
+}
+
+.menu2 {
+  display: none;
+  justify-content: end;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .darkblueBG {
+    background-color: transparent;
+  }
+
+  .menu1 {
+    display: none;
+  }
+
+  .menu2 {
+    display: flex;
+    justify-content: end;
+
+  }
 }
