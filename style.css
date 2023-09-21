@@ -1,0 +1,55 @@
+:root {
+  --bg-grey: #f7f9fc;
+  --bg-darkblue: #1b2f45;
+}
+
+header,
+#home {
+  background-color: var(--bg-darkblue);
+  color: white;
+}
+
+footer {
+  background-color: var(--bg-grey);
+}
+
+li {
+  list-style-type: "-";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright {
+  background-color: white;
+}
+
+.actionIMG {
+  background-image: url('https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2108&q=80');
+  /* min-height: 50dvh; */
+  background-size: cover;
+  background-position: center;
+}
+
+.actionOverlay {
+  /* backdrop-filter: blurr(2px); */
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+}
+
+.roundBtn {
+  border-radius: 20px;
+  padding: .5rem 2rem;
+}
+
+.noBG {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.vl {
+  border-right: 3px solid rgb(86, 184, 230);
+  height: 90%;
+}
