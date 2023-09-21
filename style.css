@@ -3,8 +3,8 @@
   --bg-darkblue: #1b2f45;
 }
 
-header,
-#home {
+
+.darkblue {
   background-color: var(--bg-darkblue);
   color: white;
 }
@@ -17,10 +17,7 @@ li {
   list-style-type: "-";
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
+
 
 .copyright {
   background-color: white;
@@ -52,4 +49,23 @@ a {
 .vl {
   border-right: 3px solid rgb(86, 184, 230);
   height: 90%;
+}
+
+.underline {
+  border-top: 3px solid rgb(86, 184, 230);
+  width: 4rem;
+  margin: auto;
+}
+
+.heroIMG {
+  background-image: url(https://plus.unsplash.com/premium_photo-1661488246595-7f21bf98b7cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.heroOverlay {
+  background-color: rgba(0, 0, 0, 0.384);
+  color: white;
+  min-height: 100dvh;
 }
