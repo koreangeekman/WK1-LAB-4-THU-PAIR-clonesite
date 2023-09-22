@@ -105,4 +105,8 @@ nav a {
   .carousel-control-next-icon {
     display: none;
   }
+
+  .mdCenterMe {
+    text-align: center;
+  }
 }
