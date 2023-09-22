@@ -12,34 +12,38 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
+  <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+    defer></script>
 </head>
 
-<body>
+<body class="debug">
   <!-- //SECTION HEADER -->
-  <header class="container-fluid heroIMG">
-    <!-- SECTION HERO -->
-    <div class="row heroOverlay" id="home">
+  <header class="container-fluid heroIMG" id="home">
+    <div class="row heroOverlay">
+
       <div class="col-12">
         <div class="row justify-content-between">
           <div class="col-6 col-md-5 px-5 py-3 darkblueBG">
             <p class="fs-2">Nova</p>
           </div>
           <!-- SECTION NAV -->
-          <div class="col-6 menu1">
-            <nav class="row justify-content-evenly align-items-center">
+          <div class="col-6 px-5 py-3 align-items-center menu1">
+            <nav class="row ">
               <div class="col"><a href="#home" class="fw-bold">Home</a></div>
               <div class="col"><a href="#about">About</a></div>
               <div class="col"><a href="#services">Services</a></div>
               <div class="col"><a href="#portfolio">Portfolio</a></div>
               <div class="col"><a href="#team">Team</a></div>
               <div class="col"><a href="#blog">Blog</a></div>
-              <div class="col-auto"><a href="#">Dropdown<i class="mdi mdi-arrow-down"></i></a></div>
+              <div class="col-auto"><a href="#">Dropdown<i class="mdi mdi-chevron-down"></i></a></div>
               <div class="col"><a href="#contact">Contact</a></div>
             </nav>
             <i class="mdi mdi-menu menu2"></i>
           </div>
         </div>
+        <!-- !SECTION NAV -->
 
+        <!-- SECTION HERO -->
         <div class="row">
           <div class="col-12 col-md-5 p-5 darkblueBG">
             <p class="fs-1">Focus On What Matters</p>
@@ -54,19 +58,22 @@
               </div>
             </div>
             <button class="btn btn-primary roundBtn">Get Started</button>
-            <button class="btn btn-primary roundBtn noBG align-content-center"><i
-                class="mdi mdi-play-circle-outline fs-3"></i> Watch
-              Video</button>
+            <button class="btn btn-primary roundBtn noBG mx-3">
+              <i class="mdi mdi-play-circle-outline fs-3"></i> Watch Video
+            </button>
           </div>
         </div>
+        <!-- // !SECTION HERO -->
+
       </div>
     </div>
+
   </header>
+  <!-- // !SECTION HEADER -->
 
 
   <!-- // SECTION MAIN -->
   <main class="container-fluid">
-
 
     <!-- SECTION WHY -->
     <div class="row py-5" id="about">
@@ -139,6 +146,8 @@
         </div>
       </div>
     </div>
+    <!-- !SECTION WHY -->
+
     <!-- SECTION SERVICES -->
     <div class="row p-5 text-center" id="services">
       <div class="col-12">
@@ -230,6 +239,8 @@
 
 
     </div>
+    <!-- !SECTION SERVICES -->
+
     <!-- SECTION CALL TO ACTION -->
     <div class="row actionIMG" id="portfolio">
       <div class="col-12 actionOverlay py-5">
@@ -244,69 +255,74 @@
         </div>
       </div>
     </div>
+    <!-- !SECTION CALL TO ACTION -->
+
     <!-- SECTION FEATURES ** DO LAST-->
     <div class="row py-5">
       <div class="col">
 
       </div>
     </div>
+    <!-- !SECTION FEATURES ** DO LAST-->
+
     <!-- SECTION BLOG -->
     <div class="row p-5 " id="blog">
-
       <div class="col-12">
         <p class="fs-1 text-center ">Recent Blog Posts</p>
       </div>
       <div class="col-12 pb-4">
-        <div class="underline ">
-
-        </div>
+        <div class="underline "></div>
       </div>
-      <div class="row pt-3">
-        <div class="col-12 col-md-3">
-
-          <img class=" img-fluid  "
-            src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-            alt="Office-desk">
-          <p><a href="">Tue, December 12</a>/Julia Parker</p>
-          <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
-            repudiandae aliquid? Rerum, minima voluptatibus...</p>
-          <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
-        </div>
-        <div class="col-12 col-md-3">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-            alt="office-workspace">
-          <p><a href="">Tue, December 12</a>/Julia Parker</p>
-          <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
-            repudiandae aliquid? Rerum, minima voluptatibus...</p>
-          <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
-        </div>
-        <div class="col-12 col-md-3">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-            alt="office-clubicals">
-          <p><a href="">Tue, December 12</a>/Julia Parker</p>
-          <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
-            repudiandae aliquid? Rerum, minima voluptatibus...</p>
-          <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
-        </div>
-        <div class="col-12 col-md-3">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-            alt="office-hallway">
-          <p><a href="">Tue, December 12</a>/Julia Parker</p>
-          <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
-            repudiandae aliquid? Rerum, minima voluptatibus...</p>
-          <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
+      <div class="col-12">
+        <div class="row pt-3">
+          <div class="col-12 col-md-3">
+            <!-- how to size image space to matching ratios of others without cropping source image? -->
+            <img class=" img-fluid  "
+              src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+              alt="Office-desk">
+            <p><a href="">Tue, December 12</a> / Julia Parker</p>
+            <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
+              repudiandae aliquid? Rerum, minima voluptatibus...</p>
+            <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
+          </div>
+          <div class="col-12 col-md-3">
+            <img class="img-fluid"
+              src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+              alt="office-workspace">
+            <p><a href="">Wed, December 13</a> / Julia Porker</p>
+            <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
+              repudiandae aliquid? Rerum, minima voluptatibus...</p>
+            <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
+          </div>
+          <div class="col-12 col-md-3">
+            <img class="img-fluid"
+              src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+              alt="office-clubicals">
+            <p><a href="">Thu, December 14</a> / Julia Perker</p>
+            <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
+              repudiandae aliquid? Rerum, minima voluptatibus...</p>
+            <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
+          </div>
+          <div class="col-12 col-md-3">
+            <img class="img-fluid"
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+              alt="office-hallway">
+            <p><a href="">Fri, December 15</a> / Julia Purker</p>
+            <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quisquam vero natus. Placeat eos
+              repudiandae aliquid? Rerum, minima voluptatibus...</p>
+            <a href="">Read More <i class="mdi mdi-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>
+    <!-- !SECTION BLOG -->
 
   </main>
+  <!-- !SECTION MAIN -->
 
   <!-- // SECTION FOOTER -->
   <footer class="container-fluid" id="contact">
@@ -321,6 +337,8 @@
         <i class="mdi mdi-instagram fs-2"></i>
         <i class="mdi mdi-linkedin fs-2"></i>
       </div>
+      <!-- !SECTION BLURB -->
+
       <!-- SECTION LINKS -->
       <div class="col-6 col-md-2">
         <p class="fs-8 fw-bold">
@@ -328,10 +346,10 @@
         </p>
         <ul>
           <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Terms of service</li>
+          <li>Privacy Policy</li>
         </ul>
       </div>
       <div class="col-6 col-md-2">
@@ -340,33 +358,48 @@
         </p>
         <ul>
           <li>Web Design</li>
-          <li>Web Design</li>
-          <li>Web Design</li>
-          <li>Web Design</li>
-          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>Product Management</li>
+          <li>Marketing</li>
+          <li>Graphic Design</li>
         </ul>
       </div>
-      <!-- SECTION CONTACT -->
-      <div class="col-12 col-md-2 text-center">
+      <!-- !SECTION LINKS -->
+
+      <!-- SECTION CONTACT US -->
+      <div class="col-12 col-md-2">
         <p class="fs-8 fw-bold">
-          CONTACT
+          Contact Us
         </p>
-        <p>info</p>
+        <p>
+          A108 Adam St <br>
+          New York, NT 535002 <br>
+          United States
+        </p>
+        <p>
+          <b>Phone:</b> +1 5589 55488 55 <br>
+          <b>Email:</b> info@example.com
+        </p>
       </div>
+      <!-- !SECTION CONTACT US -->
+
     </div>
     <!-- SECTION COPYRIGHT -->
     <div class="row text-center py-3">
       <div class="col-12 copyright py-3">
         <p class="mb-0"><i class="mdi mdi-copyright"></i> Copyright Nova. All Rights Reserved</p>
-        <p>Designed by US</p>
+        <p>Designed by <a href="#">US</a></p>
       </div>
     </div>
+    <!-- !SECTION COPYRIGHT -->
+
   </footer>
+  <!-- // !SECTION FOOTER -->
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>

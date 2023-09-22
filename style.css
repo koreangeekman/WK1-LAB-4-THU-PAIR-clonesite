@@ -16,8 +16,17 @@ nav a {
   text-decoration: none;
 }
 
-.copyright {
-  background-color: white;
+.heroIMG {
+  background-image: url(https://plus.unsplash.com/premium_photo-1661488246595-7f21bf98b7cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.heroOverlay {
+  background-color: rgba(0, 0, 0, 0.384);
+  color: white;
+  min-height: 100dvh;
 }
 
 .actionIMG {
@@ -34,13 +43,15 @@ nav a {
 }
 
 .roundBtn {
-  border-radius: 20px;
+  border-radius: 30px;
   padding: .5rem 2rem;
 }
 
 .noBG {
+  /* how to apply without loosing border shape? */
   background-color: transparent;
   border-color: transparent;
+  padding: 0 .5rem;
 }
 
 .vl {
@@ -54,17 +65,8 @@ nav a {
   margin: auto;
 }
 
-.heroIMG {
-  background-image: url(https://plus.unsplash.com/premium_photo-1661488246595-7f21bf98b7cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-  background-size: cover;
-  background-position: center;
-
-}
-
-.heroOverlay {
-  background-color: rgba(0, 0, 0, 0.384);
-  color: white;
-  min-height: 100dvh;
+.copyright {
+  background-color: white;
 }
 
 .darkblueBG {
@@ -74,7 +76,6 @@ nav a {
 
 .menu2 {
   display: none;
-  justify-content: end;
   color: white;
 }
 
@@ -90,6 +91,5 @@ nav a {
   .menu2 {
     display: flex;
     justify-content: end;
-
   }
 }
