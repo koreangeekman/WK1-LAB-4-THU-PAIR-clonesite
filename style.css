@@ -3,24 +3,22 @@
   --bg-darkblue: #1b2f45;
 }
 
-footer {
-  background-color: var(--bg-grey);
-}
-
 li {
   list-style-type: "-";
 }
 
+a {
+  text-decoration: none;
+}
+
 nav a {
   color: white;
-  text-decoration: none;
 }
 
 .heroIMG {
   background-image: url(https://plus.unsplash.com/premium_photo-1661488246595-7f21bf98b7cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
   background-size: cover;
   background-position: center;
-
 }
 
 .heroOverlay {
@@ -31,13 +29,11 @@ nav a {
 
 .actionIMG {
   background-image: url('https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2108&q=80');
-  /* min-height: 50dvh; */
   background-size: cover;
   background-position: center;
 }
 
 .actionOverlay {
-  /* backdrop-filter: blurr(2px); */
   background-color: rgba(0, 0, 0, 0.699);
   color: white;
 }
@@ -65,13 +61,17 @@ nav a {
   margin: auto;
 }
 
-.copyright {
-  background-color: white;
+.greyBG {
+  background-color: var(--bg-grey);
 }
 
 .darkblueBG {
   background-color: var(--bg-darkblue);
   color: white;
+}
+
+.copyright {
+  background-color: white;
 }
 
 .menu2 {
@@ -91,5 +91,13 @@ nav a {
   .menu2 {
     display: flex;
     justify-content: end;
+  }
+
+  .carousel-control-prev-icon {
+    display: none;
+  }
+
+  .carousel-control-next-icon {
+    display: none;
   }
 }
