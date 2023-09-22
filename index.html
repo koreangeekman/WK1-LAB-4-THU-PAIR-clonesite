@@ -27,8 +27,9 @@
             <p class="fs-2">Nova</p>
           </div>
           <!-- SECTION NAV -->
-          <div class="col-6 px-5 py-3 align-items-center menu1">
-            <nav class="row ">
+          <div class="col-6 px-5 py-3 menu1">
+            <nav class="row">
+              <!-- how to center in a row? nothing seems to be taking -->
               <div class="col"><a href="#home" class="fw-bold">Home</a></div>
               <div class="col"><a href="#about">About</a></div>
               <div class="col"><a href="#services">Services</a></div>
@@ -45,22 +46,34 @@
 
         <!-- SECTION HERO -->
         <div class="row">
-          <div class="col-12 col-md-5 p-5 darkblueBG">
-            <p class="fs-1">Focus On What Matters</p>
+          <div class="col-12 col-md-5 p-5 darkblueBG heightFill align-items-center">
+
+            <!-- how to stretch + center? no stretch or centering reaction  -->
             <div class="row">
+              <div class="col-12">
+                <p class="fs-1">Focus On What Matters</p>
+              </div>
+
               <div class="col-1">
                 <div class="vl"></div>
               </div>
               <div class="col-11">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse dolorem qui. Fugit qui magnam
-                  tempora
-                  nobis enim. Quod, est eaque! Eligendi saepe error ipsam unde cum? Aliquid, debitis accusamus.</p>
+                  tempora nobis enim. Quod, est eaque! Eligendi saepe error ipsam unde cum? Aliquid, debitis accusamus.
+                </p>
               </div>
+
+              <div class="col-auto">
+                <button class="btn btn-primary roundBtn">Get Started</button>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary roundBtn noBG">
+                  <i class="mdi mdi-play-circle-outline fs-3"></i> Watch Video
+                </button>
+              </div>
+
             </div>
-            <button class="btn btn-primary roundBtn">Get Started</button>
-            <button class="btn btn-primary roundBtn noBG mx-3">
-              <i class="mdi mdi-play-circle-outline fs-3"></i> Watch Video
-            </button>
+
           </div>
         </div>
         <!-- // !SECTION HERO -->
@@ -86,9 +99,9 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="row justify-content-center">
-
-          <div class="col-12 col-md-10">
+        <div class="row justify-content-end px-5">
+          <!-- how to shift image only? -->
+          <div class="col-12 col-md-6">
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
@@ -259,8 +272,36 @@
 
     <!-- SECTION FEATURES ** DO LAST-->
     <div class="row py-5">
-      <div class="col-12"></div>
-      <div class="col-12 greyBG"></div>
+      <div class="col-12 col-md-6 p-5 ">
+        <div class="row">
+          <div class="col-12">
+            <p class="fs-1 fw-bold">Powerful Features for Your Business</p>
+          </div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-checkbox-outline text-primary"></i> Easy Cart
+            Features</div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-finance text-secondary"></i> Lorem ipsum dolor </div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-calendar-alert text-alert"></i> Sit amet consectetur</div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-brush-off text-info"></i> Easy Cart Features</div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-card-account-mail text-warning"></i> Easy Cart
+            Features</div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-list-box-outline text-danger"></i> Adipisicing elit enim
+          </div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-sun-wireless"></i> Tempore placeat ipsa</div>
+          <div class="col-12 col-md-6 p-3"><i class="mdi mdi-sun-wireless"></i> Lorem ipsum ipsa</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 p-5">
+        <!-- insert cell phone image - relative/float positioning? --> <i class="mdi mdi-cellphone-basic"></i>
+      </div>
+
+      <div class="col-12 col-md-6 p-5 greyBG">
+        <p class="fs-1 fw-bold">Lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate blanditiis neque eius veniam corrupti,
+          nobis ipsa natus et quidem. Placeat?</p>
+        <button class="btn btn-primary roundBtn">Get Started</button>
+      </div>
+      <div class="col-12 col-md-6 p-5 greyBG"></div>
     </div>
     <!-- !SECTION FEATURES ** DO LAST-->
 
@@ -276,7 +317,7 @@
         <div class="row pt-3">
           <div class="col-12 col-md-3">
             <!-- how to size image space to matching ratios of others without cropping source image? -->
-            <img class=" img-fluid  "
+            <img class="img-fluid"
               src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
               alt="Office-desk">
             <p><a href="">Tue, December 12</a> / Julia Parker</p>

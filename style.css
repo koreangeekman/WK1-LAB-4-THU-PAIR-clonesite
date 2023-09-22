@@ -13,6 +13,7 @@ a {
 
 nav a {
   color: white;
+  display: flex;
 }
 
 .heroIMG {
@@ -40,7 +41,7 @@ nav a {
 
 .roundBtn {
   border-radius: 30px;
-  padding: .5rem 2rem;
+  padding: .5rem 1.2rem;
 }
 
 .noBG {
@@ -77,6 +78,10 @@ nav a {
 .menu2 {
   display: none;
   color: white;
+}
+
+.heightFill {
+  height: 90dvh;
 }
 
 @media (max-width: 768px) {
